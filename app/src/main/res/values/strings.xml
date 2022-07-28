@@ -4,4 +4,17 @@
     <string name="kalkulator">Kalkulator</string>
     <string name="negara">Negara</string>
     <string name="teks_kalkulator">MASUKKAN DUA ANGKA</string>
+
+    <string-array name="daftar_negara">
+        <item>Indonesia</item>
+        <item>Malaysia</item>
+        <item>Singapora</item>
+        <item>Italia</item>
+        <item>Inggris</item>
+        <item>Belanda</item>
+        <item>Argentina</item>
+        <item>Chile</item>
+        <item>Mesir</item>
+        <item>Urganda</item>
+    </string-array>
 </resources>
