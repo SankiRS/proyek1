@@ -27,7 +27,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
-        android:hint="angka pertama"
+        android:hint="@string/angka_pertama"
         android:importantForAutofill="no"
         android:inputType="numberSigned|numberDecimal"
         android:minHeight="48dp"
@@ -44,7 +44,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
-        android:hint="angka kedua"
+        android:hint="@string/angka_kedua"
         android:importantForAutofill="no"
         android:inputType="numberSigned|numberDecimal"
         android:minHeight="48dp"
@@ -59,7 +59,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
-        android:text="+"
+        android:text="@string/teks_tambah"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_angka2" />
 
@@ -69,7 +69,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
-        android:text="-"
+        android:text="@string/teks_kurang"
         app:layout_constraintStart_toEndOf="@+id/b_tambah"
         app:layout_constraintTop_toBottomOf="@+id/et_angka2" />
 
@@ -79,7 +79,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
-        android:text="/"
+        android:text="@string/teks_bagi"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_angka2" />
 
@@ -89,7 +89,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
-        android:text="X"
+        android:text="@string/teks_kali"
         app:layout_constraintEnd_toStartOf="@+id/b_bagi"
         app:layout_constraintTop_toBottomOf="@+id/et_angka2" />
 
@@ -100,7 +100,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        android:text="Bersihkan"
+        android:text="@string/teks_bersih"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/b_kurang" />

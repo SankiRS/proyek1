@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class KalkulatorActivity extends AppCompatActivity {
 
@@ -36,7 +37,10 @@ public class KalkulatorActivity extends AppCompatActivity {
                     double angka2 = Double.parseDouble(etAngka2.getText().toString());
 
                     double hasil = angka1 + angka2;
-                    tvHasil.setText("hasil\n"+hasil);
+                    String sHasil = getString(R.string.teks_hasil, hasil);
+                    tvHasil.setText(sHasil);
+                }else {
+                    Toast.makeText(KalkulatorActivity.this, getString(R.string.pesan_kesalahan), Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -49,7 +53,10 @@ public class KalkulatorActivity extends AppCompatActivity {
                     Double angka2 = Double.parseDouble(etAngka2.getText().toString());
 
                     double hasil = angka1 - angka2;
-                    tvHasil.setText("hasil\n"+hasil);
+                    String sHasil = getString(R.string.teks_hasil, hasil);
+                    tvHasil.setText(sHasil);
+                }else {
+                    Toast.makeText(KalkulatorActivity.this, getString(R.string.pesan_kesalahan), Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -62,7 +69,10 @@ public class KalkulatorActivity extends AppCompatActivity {
                     Double angka2 = Double.parseDouble(etAngka2.getText().toString());
 
                     double hasil = angka1 * angka2;
-                    tvHasil.setText("hasil\n"+hasil);
+                    String sHasil = getString(R.string.teks_hasil, hasil);
+                    tvHasil.setText(sHasil);
+                }else {
+                    Toast.makeText(KalkulatorActivity.this, getString(R.string.pesan_kesalahan), Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -75,7 +85,10 @@ public class KalkulatorActivity extends AppCompatActivity {
                     Double angka2 = Double.parseDouble(etAngka2.getText().toString());
 
                     double hasil = angka1 / angka2;
-                    tvHasil.setText("hasil\n"+hasil);
+                    String sHasil = getString(R.string.teks_hasil, hasil);
+                    tvHasil.setText(sHasil);
+                }else {
+                    Toast.makeText(KalkulatorActivity.this, getString(R.string.pesan_kesalahan), Toast.LENGTH_SHORT).show();
                 }
             }
         });

@@ -4,6 +4,19 @@
     <string name="kalkulator">Kalkulator</string>
     <string name="negara">Negara</string>
     <string name="teks_kalkulator">MASUKKAN DUA ANGKA</string>
+    <string name="angka_pertama">angka pertama</string>
+    <string name="angka_kedua">angka kedua</string>
+    <string name="teks_tambah">+</string>
+    <string name="teks_kurang">-</string>
+    <string name="teks_bagi">/</string>
+    <string name="teks_kali">X</string>
+    <string name="teks_bersih">Bersihkan</string>
+    <string name="teks_nama">Masukkan Nama Anda</string>
+    <string name="hint_nama">Nama Lengkap</string>
+    <string name="tampilkan">Tampilkan</string>
+    <string name="pesan_kesalahan">Angka Tidak Boleh Kosong</string>
+    <string name="teks_hasil">Hasil\n%1$.2f</string>
+    <string name="teks_utama">Selamat datang di proyek 1 JMP-B</string>
 
     <string-array name="daftar_negara">
         <item>Indonesia</item>
