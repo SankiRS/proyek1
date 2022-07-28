@@ -3,6 +3,10 @@ package com.example.proyek1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class KalkulatorActivity extends AppCompatActivity {
 
@@ -12,5 +16,77 @@ public class KalkulatorActivity extends AppCompatActivity {
         setContentView(R.layout.activity_kalkulator);
 
         getSupportActionBar().setTitle(R.string.kalkulator);
+
+        EditText etAngka1 = findViewById(R.id.et_angka1);
+        EditText etAngka2 = findViewById(R.id.et_angka2);
+
+        Button bTambah = findViewById(R.id.b_tambah);
+        Button bKurang = findViewById(R.id.b_kurang);
+        Button bKali = findViewById(R.id.b_kali);
+        Button bBagi = findViewById(R.id.b_bagi);
+        Button bBersih = findViewById(R.id.b_bersih);
+
+        TextView tvHasil = findViewById(R.id.tv_hasil);
+
+        bTambah.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (etAngka1.getText().toString().length()>0 && etAngka2.getText().toString().length()>0){
+                    double angka1 = Double.parseDouble(etAngka1.getText().toString());
+                    double angka2 = Double.parseDouble(etAngka2.getText().toString());
+
+                    double hasil = angka1 + angka2;
+                    tvHasil.setText("hasil\n"+hasil);
+                }
+            }
+        });
+
+        bKurang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (etAngka1.getText().toString().length()>0 && etAngka2.getText().toString().length()>0){
+                    Double angka1 = Double.parseDouble(etAngka1.getText().toString());
+                    Double angka2 = Double.parseDouble(etAngka2.getText().toString());
+
+                    double hasil = angka1 - angka2;
+                    tvHasil.setText("hasil\n"+hasil);
+                }
+            }
+        });
+
+        bKali.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (etAngka1.getText().toString().length()>0 && etAngka2.getText().toString().length()>0){
+                    Double angka1 = Double.parseDouble(etAngka1.getText().toString());
+                    Double angka2 = Double.parseDouble(etAngka2.getText().toString());
+
+                    double hasil = angka1 * angka2;
+                    tvHasil.setText("hasil\n"+hasil);
+                }
+            }
+        });
+
+        bBagi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (etAngka1.getText().toString().length()>0 && etAngka2.getText().toString().length()>0){
+                    Double angka1 = Double.parseDouble(etAngka1.getText().toString());
+                    Double angka2 = Double.parseDouble(etAngka2.getText().toString());
+
+                    double hasil = angka1 / angka2;
+                    tvHasil.setText("hasil\n"+hasil);
+                }
+            }
+        });
+
+        bBersih.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                etAngka1.setText("");
+                etAngka2.setText("");
+                tvHasil.setText("");
+            }
+        });
     }
 }

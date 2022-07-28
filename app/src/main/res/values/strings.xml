@@ -3,4 +3,5 @@
     <string name="nama">Nama</string>
     <string name="kalkulator">Kalkulator</string>
     <string name="negara">Negara</string>
+    <string name="teks_kalkulator">MASUKKAN DUA ANGKA</string>
 </resources>
